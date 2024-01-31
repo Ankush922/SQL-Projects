@@ -20,7 +20,7 @@ CREATE TABLE Enrollment (
     EnrollmentID INT,
     StudentID INT,
     CourseID INT,
-    Grade VARCHAR(2) -- Assuming Grade is represented by letters like 'A', 'B', etc.
+    Grade VARCHAR(2) -- Assuming Grade is represented by letters like 'A', 'B', etc
 );
 
 -- Insert values into the table
@@ -55,11 +55,9 @@ insert into courses values(1, "Mathematics"),
 (6, "Mathematics"), (7, "Political Science"),(9, "Geography"),(10, "Chemistry");
 insert into courses values(11, 'Business Analytics'),(13, 'Data Science'),(14, 'Geology'),(15, 'Architecture');
 
-insert into Enrollment values(1,101,1,'A+'),(2,102,2,'A'),(3,103,3,'A-'),
-(4,104,4,'B+'),(5,105,5,'B'),(6,106,6,'B-'),(7,107,7,'C+'),(8,108,8,'C'),(9,109,9,'C-'),(10,110,10,'D');
-
-insert into enrollment values(11, 111, 3, 85),(12, 112, 5, 80);
-insert into enrollment values(13, 125, 4, 83),(14, 126, 15, 68),(15, 127, 3, 91),(16, 128, 8, 79),(17, 129, 2, 88),
+insert into Enrollment values(1,101,1,92),(2,102,2,78),(3,103,3,65),
+(4,104,4,87),(5,105,5,75),(6,106,6,94),(7,107,7,81),(8,108,8,89),(9,109,9,72),(10,110,10,85);
+insert into enrollment values(11, 111, 3, 85),(12, 112, 5, 80),(13, 125, 4, 83),(14, 126, 15, 68),(15, 127, 3, 91),(16, 128, 8, 79),(17, 129, 2, 88),
 (18, 130, 12, 74),(19, 131, 11, 86),(20, 132, 9, 77),(21, 133, 7, 93),(22, 134, 6, 82),(23, 135, 5, 69),(24, 136, 10, 84),
 (25, 137, 1, 73),(26, 138, 14, 96),(27, 139, 15, 70),(28, 140, 13, 95),(29, 141, 4, 67),(30, 142, 8, 98),(31, 143, 3, 76),
 (32, 144, 2, 89),(33, 145, 12, 81),(34, 146, 1, 92),(35, 147, 9, 78),(36, 148, 6, 85),(37, 149, 15, 74),(38, 150, 11, 88),
@@ -152,8 +150,3 @@ FROM
     enrollment
 GROUP BY
     grade_group;
-
-
-
-
-
