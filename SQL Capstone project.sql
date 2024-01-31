@@ -52,8 +52,8 @@ insert into student values(111, 'Jackson', 'Adams', 22, 'Male'),
 
 insert into courses values(1, "Mathematics"),
 (2, "History"),(3, "Computer Science"),(4, "English Literature"),(5, "Physics"),
-(6, "Mathematics"), (7, "Political Science"),(9, "Geography"),(10, "Chemistry");
-insert into courses values(11, 'Business Analytics'),(13, 'Data Science'),(14, 'Geology'),(15, 'Architecture');
+(6, "Mathematics"), (7, "Political Science"),(9, "Geography"),(10, "Chemistry"),
+(11, 'Business Analytics'),(13, 'Data Science'),(14, 'Geology'),(15, 'Architecture');
 
 insert into Enrollment values(1,101,1,92),(2,102,2,78),(3,103,3,65),
 (4,104,4,87),(5,105,5,75),(6,106,6,94),(7,107,7,81),(8,108,8,89),(9,109,9,72),(10,110,10,85);
