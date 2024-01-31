@@ -69,23 +69,18 @@ select * from student;
 select * from courses;
 select * from enrollment;
 
--- Modify the value in table
-update enrollment
-set Grade = 50
-where EnrollmentID = 10;
-
 -- Delete row from table
 delete from enrollment
 where StudentID = 101 and CourseID = 6;
+
+-- Delete a row from courses where courseid is 111.
+delete from courses
+where CourseID = 111;
 
 -- Update studentid from table enrollment where enrollmentid is 50
 update enrollment
 set StudentID = 150
 where enrollmentid = 50;
-
--- Delete a row from courses where courseid is 111.
-delete from courses
-where CourseID = 111;
 
 -- Total number of students and courses
 SELECT COUNT(StudentID) AS total_students
